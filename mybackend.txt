@@ -1,0 +1,20 @@
+http://localhost:8090/login
+
+for login:
+
+
+user 1:
+
+{
+   "emailorphone":"sd@6",
+   "password": "123"
+}
+
+user 2:
+
+{
+   {
+    "emailorphone" : " 1234567890",
+    "password" : "1234556"
+}
+}
