@@ -13,9 +13,12 @@ Database Successfully connected.
 
 app.use(express.json());
 
+app.use(express.urlencoded({ extended: true }));
+
 app.get('/test', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello World! I am Soumen ')
 })
+
 
 //for run:   npm run dev 
 //dev have in D:\BACKEND\package.json
@@ -32,7 +35,7 @@ app.post('/sum', (req, res) => {
 });
 
 //Register
-const registeredUsers = [];
+// const registeredUsers = [];
 
 app.post('/register', async (req, res) => {
   const { username, email, phone, password } = req.body;
