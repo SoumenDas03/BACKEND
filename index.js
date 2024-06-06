@@ -56,7 +56,7 @@ app.post('/register', async (req, res) => {
   const userphone = await User.findOne({ phone: phone })
 
   if (useremail || userphone) {
-    res.status(200).json({ message: 'User Already Exist', });
+    res.status(201).json({ message: 'User Already Exist', });
   } else {
     const user_data = await user.save()
     res.status(200).json({ message: 'User registered successfully', user_data });
